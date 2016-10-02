@@ -1,0 +1,46 @@
+<div>
+  <!-- A very simple directive with a currency filter -->
+  <p>The sum of 5 dollars and 8 dollars is: {{5+8 | currency}}</p>
+
+  <!-- An example of 2-way binding -->
+  <div>
+    <p>Message: <input type="text" ng-model="msg"></p>
+    <p>The value of msg: {{msg}}</p>
+  </div>
+
+  <!-- Use of ng-show and ng-hide -->
+  <div>
+    <p ng-show="msg==''">Message is blank</p>
+    <p ng-hide="msg==''">The message is NOT blank</p>
+  </div>
+
+  <!-- Use of ng-repeat. See the controller for the data -->
+  <table class="table table-hover">
+    <thead>
+      <tr><th>Count</th><th>City</th><th>State</th></tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="c in cities">
+        <td>{{$index+1}}</td><td>{{c.city}}</td><td>{{c.state}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ng-click example on a button -->
+  <div>
+    <p>One:</p>
+    <button type="button" class="btn btn-primary" ng-click="increment()">Count: {{counter}}</button>
+  </div>
+
+  <div>
+    <p>Two:</p>
+    <button type="button" class="btn btn-primary" ng-click="echoContent('Happiness')">Call a Service</button>
+  </div>
+
+  <!-- Retrieve JSON from the server -->
+  <div>
+    <p>Three:</p>
+    <button type="button" class="btn btn-primary" ng-click="getContent()">Retrieve Content</button>
+  </div>
+
+</div>

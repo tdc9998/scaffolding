@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>This is an example</title>
+
+    <!-- Support Mobile Responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Load Bootstrap -->
+    <link rel="stylesheet" href="lib/bootstrap-css/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/bootstrap-css/css/bootstrap-theme.css">
+
+    <!-- Load core Angular and Angular Route -->
+    <script type="text/javascript" src="lib/angular/angular.js"></script>
+    <script type="text/javascript" src="lib/angular-route/angular-route.js"></script>
+
+    <!-- Load the main application -->
+    <script type="text/javascript" src="app/app.js"></script>
+
+    <!-- Load any necessary services -->
+    <script type="text/javascript" src="app/exampleService.js"></script>
+
+    <!-- Load any necessary controllers -->
+    <script type="text/javascript" src="app/exampleController.js"></script>
+
+  </head>
+
+  <body ng-app="ExampleApplication">
+
+    <div class="jumbotron text-center">
+      Page Title Goes Here
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          This is column one.
+        </div>
+        <div class="col-sm-4">
+          This is column two.
+        </div>
+        <div class="col-sm-4">
+          This is column three.
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <blockquote>
+            <p>This is an example of a block quote</p><footer>tdc</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-6">
+          <p class="text-primary">And this is another medium column with primary text.</p>
+        </div>
+      </div>
+
+      <!-- Outside of a row -->
+      <div class="well">This is an example of what a well looks like</div>
+
+
+      <!-- A table with support for hovering -->
+      <table class="table table-hover">
+        <thead>
+          <tr><th>One</th><th>Two</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Alpha</td><td>Beta</td></tr>
+          <tr><td>Gamma</td><td>Delta</td></tr>
+        </tbody>
+      </table>
+
+      <!-- A sample alert -->
+      <div class="alert alert-info">
+        This is an example of an informational alert.
+      </div>
+
+      <!-- Sample buttons -->
+      <button type="button" class="btn btn-primary">Primary Button</button>
+      <button type="button" class="btn btn-info">Info Button</button>
+      <a href="#" class="btn btn-success" role="button">Href Button</a>
+
+      <!-- Sample Glyph -->
+      <div>
+        The search glyph ( <span class="glyphicon glyphicon-search"></span> ) is for search.
+      </div>
+
+    <!-- Sample label -->
+    <div>
+      <p><span class="label label-primary">Additional Info</span></p>
+      <p>You should check out this label.</p>
+    </div>
+
+
+    <ng-view/>
+
+    </div>
+
+  </body>
+</html>

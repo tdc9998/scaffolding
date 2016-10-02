@@ -1,4 +1,4 @@
-angular.module('tcrowley.exampleCtrl',[])
+angular.module('tdc9998.exampleCtrl',[])
 
   // Angular auto-injects the scope for this controller
   .controller('ExampleController', function($scope, exampleService) {

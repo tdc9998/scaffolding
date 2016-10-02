@@ -1,4 +1,4 @@
-var app = angular.module('ExampleApplication', ['ngRoute', 'tcrowley.exampleCtrl', 'tcrowley.exampleSvc']);
+var app = angular.module('ExampleApplication', ['ngRoute', 'tdc9998.exampleCtrl', 'tdc9998.exampleSvc']);
 
 app.config(function($routeProvider) {
   $routeProvider.when("/example", 

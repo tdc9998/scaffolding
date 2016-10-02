@@ -1,4 +1,4 @@
-angular.module('tcrowley.exampleSvc',[])
+angular.module('tdc9998.exampleSvc',[])
 
 // Include promises (defer) and http in this service
 .factory("exampleService", function($q, $http) {
